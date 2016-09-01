@@ -6,7 +6,7 @@
 * Webpack
 * Karma
 * Jasmine/Sinon
-* Node 4.x
+* Node 6.x
 
 ### Style Guides
 * [javascript (es6)](https://github.com/airbnb/javascript)
@@ -19,12 +19,12 @@ The following steps are required in order to contribute to this application
 ### Install nvm
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash
-nvm install 4
-nvm use 4
+nvm install 6
+nvm use 6
 ```
-**NOTE: Ensure that you ```nvm use 4``` whenever you start a new terminal.
+**NOTE: Ensure that you ```nvm use 6``` whenever you start a new terminal.
 
-**NOTE: You may optionally persist this setting using `nvm alias default 4`.**
+**NOTE: You may optionally persist this setting using `nvm alias default 6`.**
 
 ## Installation
 
@@ -38,7 +38,7 @@ git clone <%= appGitRepo %>
 cd <%= appName %>
 ```
 3. Install Application Dependencies
-Make sure you ran `nvm 4`
+Make sure you ran `nvm 6`
 
 ```
 npm install
@@ -46,12 +46,12 @@ npm install
 
 ## Development
 
-### dev-serve mode
+### develop mode
 This mode starts a webpack-dev-server on your local machine for development purposes. Once running, navigate to *http://localhost:8000*.
 
 You may need to setup your browser to allow for CORS
 ```
-npm run dev-serve
+npm run develop
 ```
 
 Sample `.env`
