@@ -9,6 +9,7 @@ import modules from './config/app.modules';
 //Configuration
 import constants from './config/app.constants';
 import langConfig from './config/app.lang';
+import themeConfig from './config/app.theme';
 
 //Routing
 import routing from './routing';
@@ -31,4 +32,5 @@ angular.module('<%= appName %>', modulesToLoad)
         $urlRouterProvider.otherwise('/');
     }])
     .config(langConfig)
+    .config(themeConfig)
     .constant(constants);
