@@ -1,6 +1,7 @@
-@import "_fonts";
-@import "_vars";
-@import "_mixers";
+//contains global styles, such as resets, typography, colors, etc.
+
+@import '_variables';
+@import '_typography';
 
 body {
     height: 100%;

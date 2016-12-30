@@ -44,7 +44,7 @@ module.exports = gulp.task('default', done => {
     }];
     
     //Ask
-    inquirer.prompt(prompts, answers => {
+    inquirer.prompt(prompts).then(answers => {
         if (!answers.moveon) {
             return done();
         }
